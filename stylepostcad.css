@@ -1,0 +1,358 @@
+/*general*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*header*/
+header{
+    width: 100%;
+    height: 500px;
+}
+section{
+    width: 100%;
+    height: auto;
+}
+#checked{
+    display: none;
+}
+/*navegacion*/
+
+.logo{
+    width: 36px;
+    height: 36px;
+    transform: translateX(40px) translateY(22px);
+}
+.menu{
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: white;
+    color: #060A24;
+    height: 28px;
+}
+.punto{
+    color: #0000EC;
+    border-radius: 90%;
+    border: none;    
+}
+.titulo{
+    text-align: left;
+    margin-left: 100px;
+    padding: 50px;
+    margin: 30px;
+}
+/*botones*/
+.boton{ 
+    margin-top: 30px;
+    display: inline-block;   
+    border-radius: 3px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color:#00F3BB;
+}
+.boton:hover{
+    color: white;
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+/*fuentes del documento*/
+h1{    
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 64px;
+}
+h2{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 48px;
+}
+h5{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 24px;
+}
+h6, p{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+}
+a{   
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+}
+/*menu normal*/
+label{
+    display: none;
+}
+.menuulresponsive{
+    display: none;
+}
+.menuli{
+    float: left;
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    transform: translateX(930px) translateY(-20px);
+}
+.menuli a{
+    color: #060A24;
+    text-decoration: none;
+}
+.menuli:hover{
+    color: #00F3BB;
+}
+.menuli:hover>a{
+    color: #00F3BB;
+    text-decoration: line-through;
+}
+.menuli:active>a{
+    color: #060A24;
+    text-decoration: line-through;
+}
+#episodios #temas{
+    color: white;
+}
+#estelares{
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+#temas{
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+/*section episodios*/
+.primer #episodios{
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: auto auto;
+    text-decoration:none;
+    color: white;     
+}
+.corte1{    
+    margin-top: -570px;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 670px;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    background-color: #0000A3 ;
+    transform-origin: top right;
+    transform: skewY(-6deg);
+}
+.post{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-around;
+    align-content: space-around;  
+    gap: 15px;
+    position: relative;    
+}
+.post1{    
+    width: 93%;
+    height: auto;     
+    border-radius: 10px;
+    border: none;       
+    overflow: hidden;
+}
+/*setion phone*/
+.phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: content;
+    text-align: center;
+    position:relative;
+}
+.phone1 img{
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin: 100px;
+}
+.phone p{
+    width: 50%;
+    text-justify: auto;
+    margin: auto;
+    padding: 24px;
+    text-align: left;    
+}
+/*setion estelares*/
+.conte{      
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-content: center;
+}
+.conte img{
+    width: 100%;
+    height: auto;
+}
+.conte img:hover{
+    transform: scale(1.2);
+}
+/*setion otros conceptos*/
+.corte{
+    margin-top: -150px;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    transform-origin: top right;
+    transform: skewY(-6deg);    
+}
+.contenidocentrado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: content;
+    text-align: center;
+    position:relative;    
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    width: 100%;
+    height: 500px;
+}
+.contenidocentrado h2{
+    text-decoration:none;
+    color: white;
+}
+.submenu, h5{
+    z-index: 2;
+    position: relative;    
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;    
+}
+/*footer*/
+.footer{
+    height: auto;
+    margin: 30px;
+    padding: 10px;    
+}
+.footer1{   
+    float: left;    
+}
+.footer2 a{
+    float: right;
+    text-decoration: none;
+    list-style: none;
+    margin: 25px;
+    margin-top: -5px;
+}
+@media (max-width: 800px){
+    /*menu hamburguesa*/
+    .menuli{
+        display: none;
+    }
+    .menubtn{
+        display: block;
+        float: right;        
+    }
+    .menulabel{
+        float: right;
+        display: none;
+    }
+    .menuulresponsive{ 
+        float: right;
+        display: block;       
+        position: relative;
+        width: 100%;
+        height: 90px;
+        background-color: #0000FF;
+        text-align: left;
+        transition: all .5s;
+    }
+    .menuulresponsive a{
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        list-style: none;
+        margin-left: 20px;
+    }
+    #checked:checked ~ .menubtn{
+        height: 0px; 
+        display: none;              
+    }    
+    #checked:checked ~ .menulabel{
+        display: block;                     
+    }
+    #checked:checked ~ .menuulresponsive{
+        height: 0px;
+        display: block;               
+    }    
+    #checked:checked ~ .menuulresponsive{
+        display: none;                     
+    }
+    /*setion episodios responsive*/
+    header{
+        width: 100%;
+        height: 670px;
+    }
+    .corte1{    
+        margin-top: -830px;
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 860px;
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        background-color: #0000A3 ;
+        transform-origin: top right;
+        transform: skewY(-6deg);
+    }
+    /*setion estelares responsive*/
+    .conte{
+        display: grid;
+        grid-template-columns: auto;     
+    }
+    .conte div{
+        display: grid;
+        grid-template-columns: auto;          
+    }
+    .post{
+        display: grid;
+        grid-template-columns: auto;        
+    }
+    .post div{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #episodios #temas{
+        color: white;
+    }
+    /*setion phone responsive*/
+    .phone{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .phone1 img{
+        margin: 0;
+    }
+    .corte .corte1{
+        display: flex;
+        flex-wrap: wrap;
+    }       
+    .phone p{
+        width: auto;
+        text-justify: auto;
+        margin: auto;
+        padding: 24px;
+        text-align: left;    
+    }
+    /*footer responsive*/
+    .footer{
+        display: block;    
+    }
+    .footer1{   
+        display: inline-block;
+        margin-left: 100px; 
+    }
+    .footer2 a{
+        display: inline-block;
+        text-decoration: none;
+        list-style: none;
+        margin-top: 50px;
+    }
+}
